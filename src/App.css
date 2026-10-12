@@ -1,0 +1,26 @@
+button{
+    background-color: skyblue;
+    height: 50px;
+    width: 70px;
+    font-size: 20px;
+}
+
+
+.box{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+}
+
+
+input{
+    height: 50px;
+    width: 250px;
+    font-size: 30px;
+    text-align: center;
+}
+
+
+
+.completeBtn{
+    width: 100px;
+}
