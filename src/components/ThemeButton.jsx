@@ -1,13 +1,15 @@
-import { useContext } from "react";
-import { ThemeContext } from "./ThemeContext";
 
-function ThemeButton(){
-    const {dark, setDark} = useContext(ThemeContext);
+import { useContext } from 'react';
+import ThemeContext from './ThemeContext';
 
-    return(
-        <button onClick={()=> setDark(!dark)}>
-            {dark? "light mode": "dark mode"}
-        </button>
-    );
+function ThemeButton() {
+  const { dark, toggleTheme } = useContext(ThemeContext);
+
+  return (
+    <button className="theme-button" onClick={toggleTheme}>
+      {dark ? '☀️ Light Mode' : '🌙 Dark Mode'}
+    </button>
+  );
 }
-export default ThemeButton
+
+export default ThemeButton;

@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-c 
 function TodoManager() {
 
   const[input,setInput]=useState('')
@@ -33,12 +32,15 @@ function HandleComplete(index){
   return (
     <div className='box'>
       <input type="text"
+      id='inputT'
       value={input}
        placeholder='Enter task here'
        onChange={(e)=>setInput(e.target.value)}
       />
 
-       <button onClick={HandleAdd}>
+       <button
+       id='btn'
+        onClick={HandleAdd}>
         Add
       </button>
 
